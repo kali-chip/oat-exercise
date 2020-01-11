@@ -25,3 +25,14 @@ I will make the following decisions:
 
 The project will be published on Github, here: https://github.com/kali-chip/oat-exercise
 
+
+## Development notes and thoughts
+
+The strategy will be to create a minimal "application" that simply includes a title and then an instance of the list component.
+
+Later, I will add a second view, where the details for a particular user can be displayed.
+
+_Depending on available time_ I will consider implementing:
+
+ - A filter to search
+ - Pagination
