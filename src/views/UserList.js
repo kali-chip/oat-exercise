@@ -2,12 +2,21 @@ const m = require('mithril');
 
 const List = require('../models/List.js');
 
+function capitalize(word) {
+    return word.replace(/^\w/, function (chr) { return chr.toUpperCase(); });
+}
+
+function displayUser(user) {
+    return capitalize(user.firstName) + " " + capitalize(user.lastName);
+}
+
 module.exports = {
     view: function() {
         return m('ul.list',
             List.items.map(function(user) {
-                return m("li.user-list-item", [
-                    m('a', {href: "/user/" + user.userId, oncreate: m.route.link}, user.firstName + " " + user.lastName)
+                let label = displayUser(user);
+                return m("li.list-item", [
+                    m('a', {href: "/user/" + user.userId, oncreate: m.route.link}, label)
                 ])
             })
         );

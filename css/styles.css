@@ -1,0 +1,46 @@
+body {
+  padding-top: 50px;
+  font: 18px Tahoma, Verdana, sans-serif;
+  margin: 0;
+}
+body > * {
+    max-width: 400px;
+    margin: 10px auto;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: Palatino, Georgia, serif;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.container {
+    width: 300px;
+    margin: 10px auto;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 0 0 1px;
+    padding: 8px 15px;
+}
+.list-item a {
+    color: #880018;
+    text-decoration: none;
+}
+
+.list-item a:hover {
+    text-decoration: underline;
+}
+
+.label {
+    display: block;
+    margin: 0 0 5px;
+}
+
