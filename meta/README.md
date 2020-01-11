@@ -32,15 +32,19 @@ Later, I will add a second view, where the details for a particular user can be 
 
 ----
 
-_Depending on available time_ I will consider implementing:
-
- - A filter to search
- - Pagination
-
-----
-
 After some time spent on trying to get `ospec` (the Mithril testing framework) to work correctly and to let me _mock_ Mithril's `m.request` it seems like it just isn't supported in sane manner and the documentation for testing is mostly outdated. I've decided to not waste any more time on this. I'll have to skip testing, which I know is a bad idea, but that enough wasted time.
 
 I'll go ahead by implementing the detail view.
 
 ----
+
+I wasted too much time trying to solve testing in Mithril as well as some other minor issues. As a result I'm now tired and will end the exercise here.
+
+The main features are there: the list view and the detail view. But clearly this is far from finished or even good.
+
+In any case, a number of things are missing. Given more time, the following is a tentative roadmap of tasks to pursuit:
+
+ * Add unit tests. I'm extremely unsatisfied with this. I didn't think Mithril testing was in such a chaotic state, and maybe I should've tried going with either Jasmine or Mocha.
+ * Add pagination.
+ * Add search.
+ * Re-write the whole thing _without using Mithril_. This has clearly been a grave mistake on my side. _I_ decided to use it when it is a framework that was new to me. _I_ am to blame.
