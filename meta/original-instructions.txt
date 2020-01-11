@@ -1,0 +1,40 @@
+As explained before, we would like you to do our coding exercise in order to assess your skills. This document aims at getting you all set for our programming exercise which
+will last 24 hours. So tomorrow at the same time, we expect to receive your exercise via a link to VCS platform (GitHub, GitLab, BitBucket, ...). 
+In other words, we expect to get your exercise Tomorrow by 08.00 AM.
+
+Please make sure you read all of the following, otherwise you might miss some important aspects for us, especially the fact that we want to assess how you handle the exercise and that we prefer something not finished but well done rather than a quick thing working but missing some key elements.  
+
+
+Programming expectations and conditions
+
+As a general rule, we want to assess your skills in realistic conditions as you would have on the job. Therefore:
+
+    You have internet use it! Consult PHP references, troubleshooting resources, etc.
+
+    While the scope of the exercise is small you need to consider this functionality is part of a bigger codebase with a lot of developers expected to understand and augment your code as easily as possible:
+
+        Readability: Think about how easy it will be for other developers to take over your code.
+
+        Flexibility/Generalisation: Functional requirements tend to change, data sources might be today a CSV file, tomorrow it might be a JSON or a MySQL database, maybe another REST web service. As a general rule it is important to tackle broader flexibility than the strict requirement
+
+        Robustness, things do not always go as expected, right?
+
+    Reutilisation: A framework, A library a code snippet. Yes, you can reuse them as long as the re-used component is clearly highlighted to help us distinguishing your own code and re-used components. It is really up to you, maybe do it the way you would choose if this was a personal project. 
+
+On the outcome/ completeness of the code, you will provide.
+
+
+As a general rule, we prefer to see a solid foundation start rather than a rushed working solution which do not meet above conditions. 
+
+The Exercise
+
+The goal of the exercise is to create a list of test-takers (test-takers can be seen as users).
+
+
+_Frontend (HTML/CSS/JS)_. Create a component that enables you to load the data from the service created during step 1 and display the names of the test takers.
+
+> Nice to have: The component should be reused to display other kinds of data.
+Here is the link of the API: http://hr.oat.taocloud.org/api/
+
+The homework has to be done in JavaScript (no TypeScript or other languages)
+
