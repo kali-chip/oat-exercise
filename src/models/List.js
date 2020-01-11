@@ -1,9 +1,11 @@
 const m = require('mithril');
 
+const cache = {};
 let List = {
     items: [],
     loadItems: function(url, options) {
-        let params = Object.assign({ limit: 20}, options);
+        if (List.items.length) return;
+        let params = Object.assign({ limit: 200}, options);
 
         return m.request({
             method: "GET",

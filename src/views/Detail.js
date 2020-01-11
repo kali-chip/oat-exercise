@@ -7,7 +7,7 @@ module.exports = {
             m("h1", {class: "title"}, "List of users taking the test:"),
             m('.container', [
                 m(m.route.Link, {href:'/users', class: "back"}, "⇦ Back to list"),
-                m(UserDetail(vnode.attrs.id))
+                m(()=>UserDetail(vnode.attrs.id))
             ])
         ]);
     }

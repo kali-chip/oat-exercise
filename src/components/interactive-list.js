@@ -2,7 +2,7 @@ const m = require('mithril');
 const c = require('../config/index.js');
 
 const List = require('../models/List.js');
-const UserView = require('../views/UserList.js');
+const UserListView = require('../views/UserList.js');
 
 module.exports = function() {
 
@@ -10,5 +10,5 @@ module.exports = function() {
 
     List.loadItems(url);
 
-    return UserView;
+    return UserListView;
 };
