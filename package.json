@@ -4,8 +4,7 @@
   "description": "A list of test-takers, as an exercise for OAT.",
   "main": "index.js",
   "scripts": {
-    "build": "browserify src/index.js -o bin/app.js",
-    "test": "ospec --require ./test-setup.js"
+    "build": "browserify src/index.js -o bin/app.js"
   },
   "repository": {
     "type": "git",
@@ -22,8 +21,5 @@
     "mithril": "^2.0.4"
   },
   "devDependencies": {
-    "jsdom": "^15.2.1",
-    "mithril-query": "^3.0.1",
-    "ospec": "^4.0.1"
   }
 }

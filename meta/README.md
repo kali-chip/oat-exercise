@@ -21,10 +21,8 @@ I will make the following decisions:
  - I will be using _node.js-style_ modules (`require`) and then bundling with _Browserify_.
  - I will be targetting reasonably recent browsers. This means that while I won't be using Babel, I will use some solidly- and well-supported features of ES6.
  - I'll use a smaller structural framewrok: [Mithril.js](https://mithril.js.org/).
- - I would generally use Mocha for testing but as Mithril comes with _`ospec`_ integrated, I will use that for running my tests.
 
 The project will be published on Github, here: https://github.com/kali-chip/oat-exercise
-
 
 ## Development notes and thoughts
 
@@ -32,7 +30,17 @@ The strategy will be to create a minimal "application" that simply includes a ti
 
 Later, I will add a second view, where the details for a particular user can be displayed.
 
+----
+
 _Depending on available time_ I will consider implementing:
 
  - A filter to search
  - Pagination
+
+----
+
+After some time spent on trying to get `ospec` (the Mithril testing framework) to work correctly and to let me _mock_ Mithril's `m.request` it seems like it just isn't supported in sane manner and the documentation for testing is mostly outdated. I've decided to not waste any more time on this. I'll have to skip testing, which I know is a bad idea, but that enough wasted time.
+
+I'll go ahead by implementing the detail view.
+
+----

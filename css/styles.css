@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 body > * {
-    max-width: 400px;
+    max-width: 450px;
     margin: 10px auto;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -14,8 +14,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .container {
-    width: 300px;
-    margin: 10px auto;
+    width: 400px;
+    margin: 20px auto;
 }
 
 .list {
@@ -38,9 +38,27 @@ h1,h2,h3,h4,h5,h6 {
 .list-item a:hover {
     text-decoration: underline;
 }
-
-.label {
-    display: block;
-    margin: 0 0 5px;
+.infoBox {
+    padding: 10px;
+    margin: 40px 10px;
+    border: 1px dotted #ccaacc;
+    background-color: #f9f9f9;
+}
+.infoBox h5.title {
+    margin: 10px 0;
+}
+.infoBox .personalData, .infoBox img {
+    display: inline-block;
+    vertical-align: top;
+}
+.infoBox .personalData {
+    width: 200px;
+    margin-left: 20px;
+}
+.infoBox .personalData .value {
+    margin-bottom: 10px;
+}
+.infoBox .personalData .address {
+    font-style: italic;
 }
 
